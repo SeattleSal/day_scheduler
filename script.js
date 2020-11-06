@@ -29,9 +29,13 @@ function init() {
 
         // display any saved diaries in local storage
         // get local storage
-        var storedDiary = localStorage.getItem(numString) || [];
-        if (storedDiary != []) {
+        var storedDiary = localStorage.getItem(numString) || "";
+        if (storedDiary != "") {
             console.log(`data stored at ${numString} see ${storedDiary}`);
+            // put stored value in time slot diary
+            $(`#text-area-${numString}`).append(storedDiary);
+
+            // console.log(divEl);
         }
     }
 }
