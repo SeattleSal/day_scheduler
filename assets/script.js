@@ -1,12 +1,14 @@
+// script for day_scheduler
 // variables
 var currentTime = moment();
-var currentDate = currentTime.format('dddd, MMMM Do');
 
 // init current page
 function init() {
     // show current date
+    var currentDate = currentTime.format('dddd, MMMM Do');
     $("#currentDay").text(currentDate);
-    // currentHour is a number 
+
+    // grab current hour to use for displaying past/present/future by color
     var currentHour = parseInt(currentTime.format("HH"));
 
     // loop through hours 09 to 17 military time (9AM to 5PM)
@@ -31,8 +33,6 @@ function init() {
         // display any saved diaries found in local storage
         var storedDiary = localStorage.getItem(numString) || "";
         if (storedDiary != "") {
-            console.log(`data stored at ${numString} see ${storedDiary}`);
-            // display stored value in time div for that hour
             $(`#text-area-${numString}`).append(storedDiary);
         }
     }
@@ -52,7 +52,6 @@ function saveDiary(){
         localStorage.setItem(hour, textInput);
     }
 }
-
 
 // add listeners to buttons on page to save any entries
 $(document).on("click", ".saveBtn", saveDiary);
