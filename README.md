@@ -3,20 +3,32 @@
 ## Table of Contents
 * [Description](#description)
 * [Links](#links)
+* [Use](#use)
+* [Responsiveness](#responsiveness)
 * [Screenshots](#screenshots)
+* [References](#references)
 * [License](#license)
 
 ## Description
-Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
-
-You'll need to use the [Moment.js library](https://momentjs.com/) to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+This is a simple calendar application that allows the user to save events for each hour of the work day (9am to 5pm). This app runs in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
 ## Links
-* [Day Scheduler](https://seattlesal.github.io/day_scheduler/)
+* [Day Scheduler Website](https://seattlesal.github.io/day_scheduler/)
+<br>
+* [GitHub Repository](https://github.com/SeattleSal/day_scheduler)
+
+## Use
+The user can enter in text to each hour slot shown on screen and save to local storage by pressing the lock icon on the right. The user can save updates to the text or delete the text and save. Since the entries are stored in local storage, the user can refresh the page and the diary will still fill in with saved entries.
+
+## Responsiveness
+The layout responds and adapts to differen screen sizes using Bootstrap grid styling.
 
 ## Screenshots
 Day Scheduler Page: <br>
-![Day Scheduler](./assets/img/scheduler-screenshot.png)
+![Day Scheduler](./assets/img/calendar_screenshot.png)
+
+## References
+[Moment.js library](https://momentjs.com/)
 
 ## License
 Copyright 2020 Sally Perez
