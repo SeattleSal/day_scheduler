@@ -45,10 +45,16 @@ function saveDiary(event){
     // event.preventDefault; - do i need this?
     var buttonEl = $(event.target);
     console.log(typeof buttonEl, buttonEl);
+
     var textInput = buttonEl.siblings("textarea").val();
 
-    // save text to local storage
-    localStorage.setItem(buttonEl.attr("data-hour"), textInput);
+    // need to add something if val is blank
+        // save text to local storage
+    if (textInput != "") {
+        localStorage.setItem(buttonEl.attr("data-hour"), textInput);
+    } else {
+        localStorage.removeItem("data-hour");
+    }
 }
 
 
