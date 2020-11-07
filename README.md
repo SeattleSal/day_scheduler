@@ -10,11 +10,10 @@
 * [License](#license)
 
 ## Description
-This is a simple calendar application that allows the user to save events for each hour of the work day (9am to 5pm). This app runs in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+This is a simple calendar application that allows the user to save events for each hour of the work day (9am to 5pm). This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery.
 
 ## Links
 * [Day Scheduler Website](https://seattlesal.github.io/day_scheduler/)
-<br>
 * [GitHub Repository](https://github.com/SeattleSal/day_scheduler)
 
 ## Use
@@ -28,7 +27,12 @@ Day Scheduler Page: <br>
 ![Day Scheduler](./assets/img/calendar_screenshot.png)
 
 ## References
-[Moment.js library](https://momentjs.com/)
+The following libraries were used to style and/or create functionality:
+* [Moment.js library](https://momentjs.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Font Awesome](https://fontawesome.com/)
+* [jQuery](https://jquery.com/)
+
 
 ## License
 Copyright 2020 Sally Perez
